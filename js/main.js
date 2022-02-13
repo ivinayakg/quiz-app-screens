@@ -1,0 +1,12 @@
+themeHanlder();
+alertHandler();
+avatarHandler();
+badgeHandler();
+gridHandler();
+inputHandler();
+listHandler();
+modalHandler();
+navigationHandler();
+ratingHandler();
+sliderHandler();
+snackbarHandler();

@@ -1,0 +1,99 @@
+@import url(https://fit-library.netlify.app/CSS/main.css);
+@import url(/css/component.css);
+
+:root {
+  --primary: 168, 85, 247 !important;
+  --secondary: 168, 85, 247;
+
+  --background-color: #faf5ff;
+  --text-color: #1e293b;
+  --text-fade: #475569;
+  --title-color: #0f172a;
+  --header-height: 4rem;
+  --shadow: 0, 0, 0;
+}
+
+html {
+  max-width: 100vw;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+body.dark-theme {
+  --background-color: #17223b;
+  --title-color: #faf5ff;
+  --text-color: #faf5ff;
+  --shadow: 244, 244, 244;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--title-color);
+}
+
+.primary-text {
+  color: rgb(var(--primary));
+}
+
+/* header component */
+.header {
+  background-color: var(--background-color);
+  z-index: 50;
+}
+
+.header_links {
+  color: rgb(var(--primary));
+  top: var(--header-height);
+  background-color: var(--background-color);
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: max-content;
+  max-width: 100vw;
+  gap: 2rem;
+  width: 100vw;
+  right: 0px;
+  top: -100%;
+  box-shadow: -5px 1px 8px 0px rgba(var(--shadow), 0.1);
+}
+
+.header_toggle > * {
+  background-color: var(--title-color);
+}
+
+.header_links--active {
+  z-index: 49;
+  top: var(--header-height);
+}
+
+.header_link .active {
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+}
+
+.header_themeToggle {
+  margin-left: auto;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+/* card */
+.card_content {
+  white-space: break-spaces;
+  max-width: 90%;
+  align-self: flex-start;
+  height: max-content;
+}
