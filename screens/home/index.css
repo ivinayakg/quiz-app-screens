@@ -1,0 +1,98 @@
+.hero {
+  padding: 0rem;
+}
+
+.hero .container {
+  padding: 0rem;
+  max-width: 100vw;
+}
+
+.bannerMain {
+  display: grid;
+  width: 100vw;
+  grid-template-areas: "overflow";
+}
+
+.bannerMain_content {
+  grid-area: overflow;
+  z-index: 10;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 10rem;
+  text-align: center;
+  gap: 7px;
+  opacity: 0%;
+  transition: ease 350ms;
+}
+
+.bannerMain_content:hover {
+  opacity: 100%;
+}
+
+.bannerMain_content h2 {
+  color: white;
+}
+
+.bannerMain_img {
+  grid-area: overflow;
+  width: 100vw;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: 40% center;
+}
+
+/* .quiz {
+  padding: 0rem;
+} */
+
+.quiz .container .head2 {
+  align-self: flex-start;
+}
+
+.quiz_slider {
+  max-width: 90vw;
+}
+
+.quiz_slider .slider_slide {
+  /* padding-left: 4rem; */
+}
+
+.quiz_slider .slider_item {
+  width: 100vw;
+  display: flex;
+  padding: 1rem 0rem;
+  padding-right: 10rem;
+}
+
+.quiz_slider .slider_buttons {
+  width: 100%;
+  max-width: 90vw;
+}
+
+.quiz_slider button:hover {
+  outline: none;
+}
+
+.quiz_slider .slider_buttons button {
+  background-color: transparent;
+  color: var(--title-color);
+}
+
+.quiz_slider .quiz_card {
+  background-color: var(--background-color);
+  flex-grow: 1;
+  box-shadow: none;
+  border: 1.5px solid rgba(var(--shadow), 0.1);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.quiz_card .card_imggradient,
+.quiz_card .card_imggradient img {
+  border-radius: 12px;
+  height: 250px;
+}
