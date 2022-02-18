@@ -1,0 +1,9 @@
+.rules .list_comp {
+  list-style: circle;
+  padding: 1.2rem 12rem;
+  text-align: justify;
+}
+
+.rules .list_item {
+  color: var(--text-color);
+}
